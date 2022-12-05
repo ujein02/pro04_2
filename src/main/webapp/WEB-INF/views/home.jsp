@@ -37,7 +37,7 @@
     
         <div class="show-for-large large-3 cell">
           <img src="${path2 }/data/img12.jpg" alt="picture of space">
-          <p class="subheader" style="font-weigh:800px;">Genuine Flavor Made from Nature</p>
+          <p class="subheader" style="font-weigh:800px;"><br>Genuine Flavor Made from Nature</p>
         </div>
     
         <div class="medium-5 large-3 cell">
@@ -108,7 +108,7 @@
     </div>
     
     <div class="">
-      <p class="lead">Trending Planetary Destinations</p>
+      <h3 class="lead">NEWS</h3>
     </div>
     
     <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
@@ -116,24 +116,24 @@
         <div class="callout">
           <p></p>
           <p class="pic"><img src="${path2 }/data/img15.png" alt="이미지"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p class="lead">BIOPEDIA</p>
+          <p class="subheader">Top 10 Trends for 2023</p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>B</p>
+          <p></p>
           <p class="pic"><img src="${path2 }/data/img16.png" alt="이미지"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p class="lead">SNS</p>
+          <p class="subheader">CJ BIO Nrich : Introducing our Nrichs for you (TasteNrich®, FlavorNrich) full ver.</p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p> B</p>
+          <p></p>
           <p class="pic"><img src="${path2 }/data/img17.jpg" alt="이미지"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p class="lead">FlavorNrich</p>
+          <p class="subheader">CJ제일제당, 세계 최초 천연 시스테인 개발. </p>
         </div>
       </div>
       

@@ -27,6 +27,7 @@
 	<resources mapping="/check/**" location="/WEB-INF/views/check" />
 	<resources mapping="/user/**" location="/WEB-INF/views/user" />
 	<resources mapping="/free/**" location="/WEB-INF/views/free" />
+	<resources mapping="/content/**" location="/WEB-INF/views/content" />
 
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->

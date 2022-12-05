@@ -7,20 +7,13 @@
 <!-- 푸터 내용 기술 -->
 <article class="ft_wrap">
 	<div class="footer-nav-left">
-	  <p class="footer-copyright">©2022 Company WebApplication</p>
+	 <p class="menu-text" id="logo2"><img src="${path3 }/data/logo1.png" alt="이미지"></p>
+	  
 	</div>
 	<div class="footer-nav-center">
-	  <ul class="footer-nav-menu">
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/sites/docs/">Docs</a>
-	    </li>
-	  </ul>
+		<p> 개인정보처리방침 <br> CJ제일제당(주) | 주소: CJ제일제당 센터 서울시 중구 동호로 330 | 연락처: 02-6740-1114 <br> 
+		©2019 CJ CHEILJEDANG CORP. ALL RIGHTS RESERVED</p><br>
+
 	</div>
 	<div class="footer-nav-right">
 	  <ul class="footer-nav-menu-icons">
