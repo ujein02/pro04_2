@@ -157,10 +157,8 @@ public class FreeController {
     
     //ckeditor를 이용한 서버에 전송된 이미지 뿌려주기
     @RequestMapping(value="ckImgSubmit.do")
-    public void ckSubmit(@RequestParam(value="uid") String uid
-    		, @RequestParam(value="fileName") String fileName
-    		, HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException{
+    public void ckSubmit(@RequestParam(value="uid") String uid, @RequestParam(value="fileName") String fileName, 
+    		HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
     	
     	//서버에 저장된 이미지 경로
     	String path = "D:\\kje\\pro04\\pro04\\src\\main\\webapp\\resources\\upload" + "ckImage/";	// 저장된 이미지 경로

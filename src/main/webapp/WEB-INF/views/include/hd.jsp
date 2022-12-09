@@ -13,7 +13,7 @@
      <ul class="dropdown menu" data-dropdown-menu>
        <li class="menu-text" id="logo1"><img src="${path1 }/data/logo.png" alt="이미지"></li>
        <li><a href="${path1 }/content/company.do">Company</a></li>
-       <li><a href="#">Product</a></li>
+       <li><a href="${path1 }/content/product.do">Product</a></li>
        <li><a href="#">Service</a></li>
        <li class="has-submenu">
 			<a href="#">Community</a>

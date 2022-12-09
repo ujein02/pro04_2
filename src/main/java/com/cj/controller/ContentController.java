@@ -14,5 +14,10 @@ public class ContentController {
 	public String sample(Locale locale, Model model) throws Exception {
 		return "content/company";
 	}
+	
+	@RequestMapping("product.do")		//http://localhost:8092/sample/main
+	public String sample2(Locale locale, Model model) throws Exception {
+		return "content/product";
+	}
 
 }
