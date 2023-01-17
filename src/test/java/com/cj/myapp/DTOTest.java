@@ -1,25 +1,22 @@
 package com.cj.myapp;
 
+import org.junit.Assert;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import com.cj.dto.MemberDTO;
+import com.cj.dto.SampleDTO;
 
+import lombok.extern.log4j.Log4j;
+
+@Log4j
 public class DTOTest {
-	private static final Logger logger = LoggerFactory.getLogger(DTOTest.class);
-	
 	@Test
-	public void testDto() {
-		MemberDTO dto = new MemberDTO();
+	public void test3() throws Exception {
+		SampleDTO dto = new SampleDTO();
 		dto.setId("test");
 		dto.setPw("1234");
-		dto.setName("테스트");
-		dto.setTel("01011111111");
-		dto.setAddr1("일산동구");
-		dto.setPt(100);
-		dto.setRegdate("2022-11-21");
-		
-		logger.info(dto.toString());
+		Assert.assertNotNull(dto);
+		log.info(dto);
+		log.info("----------------");
+		log.info(dto.getId());
 	}
 }

@@ -11,7 +11,7 @@
    <div class="top-bar-left" id="gnb">
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
-       <li class="menu-text" id="logo1"><img src="${path1 }/data/logo.png" alt="이미지"></li>
+       <li class="menu-text" id="logo1"><a href="${path1 }/"></a></li>
        <li><a href="${path1 }/content/company.do">Company</a></li>
        <li><a href="${path1 }/content/product.do">Product</a></li>
        <li><a href="#">Service</a></li>
@@ -19,8 +19,6 @@
 			<a href="#">Community</a>
 			<ul class="submenu menu vertical" data-submenu>
 				<li><a href="${path1 }/board/list.do">공지사항</a></li>
-				<li><a href="#">자료실</a></li>
-				<li><a href="#">질문 및 답변</a></li>
 				<li><a href="${path1 }/free/list.do">자유게시판</a></li>
 			</ul>
     	</li>

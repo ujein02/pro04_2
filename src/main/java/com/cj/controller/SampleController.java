@@ -1,9 +1,13 @@
 package com.cj.controller;
 
+import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,11 +20,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.cj.dto.MemberDTO;
+import com.cj.dto.SampleDTO;
+import com.cj.service.SampleService;
 
 //http://localhost:8092/sample/
 @Controller
 @RequestMapping("/sample/*")
 public class SampleController {
+	
+	private static final Logger log = LoggerFactory.getLogger(SampleController.class);	
+	
+	@Autowired
+	SampleService sampleService;
 
 	@RequestMapping("main")		//http://localhost:8092/sample/main
 	public String sample(Locale locale, Model model) throws Exception {
@@ -126,4 +137,21 @@ public class SampleController {
 		mav.setViewName("sample/post7");
 		return mav;
 	}
+	
+	@GetMapping("list")
+	public String sampleList(Model model) throws Exception {
+		List<SampleDTO> sampleLst = sampleService.sampleList();
+		model.addAttribute("sampleList", sampleLst);
+		return "sample/list";
+	}
+	
+	@GetMapping("getSample")
+	public String getSample(@RequestParam String id, Model model) throws Exception {
+		log.info("id : "+id);
+		SampleDTO sample = sampleService.getSample(id);
+		model.addAttribute("sample", sample);
+		return "sample/getSample";
+	}
 }
+
+

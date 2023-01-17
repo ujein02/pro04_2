@@ -1,5 +1,7 @@
 package com.cj.myapp;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -11,6 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.cj.dto.SampleDTO;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/**/root-context.xml"})
 public class MybatisTest {
@@ -18,6 +22,9 @@ public class MybatisTest {
 	
 	@Inject
     private SqlSessionFactory sqlFactory;
+	
+	@Inject
+	SqlSession sqlSession;
     
     @Test
     public void testFactory(){
@@ -32,5 +39,13 @@ public class MybatisTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    
+    @Test
+    public void test2() {
+    	List<SampleDTO> list = sqlSession.selectList("sample.sampleList");
+    	for(SampleDTO sample : list) {
+    		logger.info(sample.toString());
+    	}
     }
 }

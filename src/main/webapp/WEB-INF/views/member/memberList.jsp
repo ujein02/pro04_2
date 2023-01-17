@@ -22,13 +22,13 @@
 
     <div class="row column text-center">
       <h2 class="h1">회원 목록</h2>
-      <hr>
+      
       <table>
       	<thead>
       		<tr>
-      			<th width="80">No</th>
-      			<th width="100">ID</th>
-      			<th width="100">NAME</th>
+      			<th>No</th>
+      			<th>ID</th>
+      			<th>NAME</th>
       			<th>RegDate</th>
       			<th>Point</th>
       		</tr>

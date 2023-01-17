@@ -116,7 +116,13 @@
 			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>  
-		  
+		
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-all</artifactId>
+		    <version>1.9.5</version>
+		    <scope>test</scope>
+		</dependency>  
 		<!--  스프링 테스트 라이브러리 추가 -->
 		<dependency>
 			<groupId>org.springframework</groupId>

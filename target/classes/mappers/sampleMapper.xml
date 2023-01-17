@@ -3,11 +3,24 @@
 "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="sample">
-	<select id="memberList" resultType="com.cj.dto.MemberDTO">
-		select * from member
+	<select id="sampleList" resultType="com.cj.dto.SampleDTO">
+		select * from sample
 	</select>
-	<insert id="memberJoin">
-		insert into member(id, pw, tel, addr, email) values #{id}, #{pw}, #{tel}, #{addr}, #{email}
+	<!-- 글 상세보기 -->
+	<select id="getSample" resultType="com.cj.dto.SampleDTO">
+		select * from sample where id=#{id}
+	</select>
+	<insert id="addSample">
+		insert into sample values(#{id}, #{pw})
 	</insert>
+	<select id="sampleCount" resultType="integer">
+		select count(*) from sample
+	</select>
+	<update id="updateSample" >
+		update sample set pw=#{pw} where id=#{id}
+	</update>
+	<delete id="deleteSample" >
+		delete from sample where id=#{id}
+	</delete>
 </mapper>
 <!-- namespace나 해당 명령의 id는 중복되면 절대 안됨 -->

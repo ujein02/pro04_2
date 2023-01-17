@@ -38,8 +38,8 @@ ul { list-style:none; }
 .orbit-slide{height:600px;}
 .orbit-container {height:600px;}
 .small-12 cell > label{font-size:25px;}
-#logo { display:block; width:100px; height:50px; background-image:url(""); background-color:white;
-background-size:90% auto; background-repeat:no-repeat; background-position:center center;  z-index:91;}
+#logo1 { display:block; width:100px; height:50px; background-image:url("${path0 }/data/logo.png"); background-color:#e6e6e6;
+background-size:100% auto; background-repeat:no-repeat; background-position:center center;  z-index:91;}
 
 #gnb > ul > li[role="menuitem"] { height:38px; }
 #gnb > ul > li.menu-text[role="menuitem"] { padding-top:0px; padding-bottom:0px; }
@@ -51,7 +51,7 @@ background-size:90% auto; background-repeat:no-repeat; background-position:cente
 
 #table1 th { border-bottom:1px solid #fff; }
 
-#footer {height:100px;} 
+#footer {height:100px; margin-top:200px;} 
 .footer-content{height:20px;}
 .footer-nav {	background-color:#2d2d2d; height:80px; box-sizing:border-box; overflow:hidden; }
 .footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
@@ -75,7 +75,7 @@ background-size:90% auto; background-repeat:no-repeat; background-position:cente
 	width:25%; height:25%;
 }
 
-#logo1{display:block;width:130px;height:auto; background-color:transparent;}
+#logo1{display:block;width:130px;height:38px; background-color:transparent; float:left; padding-top: 0px;}
 #logo2{padding-top:20px;}
 
 .button-group{float:right;}
@@ -83,5 +83,9 @@ background-size:90% auto; background-repeat:no-repeat; background-position:cente
 .cjbio-pb {background-image:url("${path0}/data/map.png");height:500px; padding-top:120px;}
 .page-info{display:block; width:100%; height:460px; background-color:#f4651f;  color:#fff; padding-top:150px;}
 .inner-mission {background-image:url("${path0}/data/mission.png"); height:700px; background-size:80% auto; background-repeat:no-repeat; background-position:center center;}
+.lead, .subheader { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.grid-container{padding-bottom: 100px;}
+.callout {height: 250px;}
+.pic img{height: 223px;}
 
 </style>

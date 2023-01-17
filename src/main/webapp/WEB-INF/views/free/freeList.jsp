@@ -49,11 +49,11 @@
 		      	</c:forEach>	
 		      	</tbody>
 		      </table>
-			      	    
+			    <c:if test='${not empty sid}'>	  	    
 		      	<div class="button-group">
 				  <a class="button" href="${path1 }/free/insert.do">글쓰기</a>
 				</div>
-			
+				</c:if>
 	      </div>
 
 	    </div>

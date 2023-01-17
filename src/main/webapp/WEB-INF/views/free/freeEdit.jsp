@@ -13,7 +13,7 @@
 	<title>글 수정하기</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-    <script type="text/javascript" src="${path1 }/resources/keditor/ckeditor.js"></script>
+    <script type="text/javascript" src="${path1 }/resources/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 	<header id="header">

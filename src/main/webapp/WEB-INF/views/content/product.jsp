@@ -24,7 +24,7 @@
 .tastenrich-solutions {display:block; width:100%; height:600px; background-color:#f7e9d5;  color:#444; padding-top:80px;}
 .inner{padding-bottom:10px;}
 .tastenrich-video{display:block; width:100%; height:800px; background-color:#00a569;  color:#fff; padding-top:30px; padding-bottom:20px;}
-.video-box{width:1150px; height:580px;}
+.video-box{width:100%; height:580px;}
 
 </style>
 <body>
